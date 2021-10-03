@@ -9,9 +9,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.2",
-	"appid": "wx9aa5ff65811be673",
-	"projectname": "voteforyou",
+	"libVersion": "2.17.0",
+	"appid": "wx8d7ee58b0c4d0e7d",
+	"projectname": "WechatVote",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

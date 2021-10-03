@@ -24,7 +24,7 @@
  
    1.下载文件 git clone
 
-   2.如果有自己的服务器 更改app.js里面的host属性为自己的服务器地址 ps: 服务器文件夹名字 wx_graduation_voteforyou (也可自行更改程序)  
+   2.如果有自己的服务器 更改app.js里面的host属性为自己的服务器地址 ps: 服务器文件夹名字 wx_vote (也可自行更改程序)  
 
    3.导入sql到服务器数据库
    

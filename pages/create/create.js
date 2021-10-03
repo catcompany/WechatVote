@@ -214,7 +214,7 @@ Page({
        var that = this;
       wx.request({
         method: "GET",
-        url: app.globalData.host+'/wx_graduation_voteforyou/',
+        url: app.globalData.host+'/wx_vote/',
         data: { "scene":"wx_vote_save","userid": app.globalData.userid,"votepack":votepack},
         success: function (rsp){
           //清空write
@@ -321,7 +321,7 @@ Page({
               var tempFilePaths = res.tempFilePaths;
                 // 上传
               wx.uploadFile({
-                url: app.globalData.host + '/wx_graduation_voteforyou/',//仅为示例，非真实的接口地址
+                url: app.globalData.host + '/wx_vote/',//仅为示例，非真实的接口地址
                 filePath: tempFilePaths[0],
                 name: 'file',
                 formData: {

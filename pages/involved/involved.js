@@ -67,7 +67,7 @@ Page({
         var id = app.globalData.userid;
             //获取投票列表
             wx.request({
-              url: app.globalData.host + "/wx_graduation_voteforyou/",
+              url: app.globalData.host + "/wx_vote/",
               data: { "scene": "get_vote_list_own", "id": id },
               success: function (res) {
                 console.log(res.data);
@@ -105,7 +105,7 @@ Page({
       if(a == 0){
         //获取投票列表_自己发起
         wx.request({
-          url: app.globalData.host + "/wx_graduation_voteforyou/",
+          url: app.globalData.host + "/wx_vote/",
           data: { "scene": "get_vote_list_own", "id": id },
           success: function (res) {
             console.log(res.data);
@@ -127,7 +127,7 @@ Page({
       }else if(a == 1){
         //获取投票列表_自己参与
         wx.request({
-          url: app.globalData.host + "/wx_graduation_voteforyou/",
+          url: app.globalData.host + "/wx_vote/",
           data: { "scene": "get_vote_list_join", "id": id },
           success: function (res) {
             console.log(res.data);
@@ -149,7 +149,7 @@ Page({
       }else{
         //获取投票列表_自己参与
         wx.request({
-          url: app.globalData.host + "/wx_graduation_voteforyou/",
+          url: app.globalData.host + "/wx_vote/",
           data: {
             "scene": "get_vote_list_audit", "id": id },
             success: function (res) {

@@ -40,7 +40,7 @@ Page({
       title: '加载中..',
     })
     wx.request({
-      url: app.globalData.host + "/wx_graduation_voteforyou/",
+      url: app.globalData.host + "/wx_vote/",
       data: { "scene": "aduitvote", "id": id },
       success: function (e) {
        wx.showToast({
@@ -61,7 +61,7 @@ Page({
       title: '加载中..',
     })
     wx.request({
-      url: app.globalData.host + "/wx_graduation_voteforyou/",
+      url: app.globalData.host + "/wx_vote/",
       data: { "scene": "deletevote", "id": id },
       success: function (e) {
         wx.showModal({
@@ -91,7 +91,7 @@ Page({
       title: '加载中..',
     })
     wx.request({
-      url: app.globalData.host +"/wx_graduation_voteforyou/",
+      url: app.globalData.host +"/wx_vote/",
       data:{"scene":"endvote","id":id},
       success:function(e){
         that.setData({
@@ -214,7 +214,7 @@ Page({
       })
       var that =this;
       wx.request({
-        url: app.globalData.host +"/wx_graduation_voteforyou/",
+        url: app.globalData.host +"/wx_vote/",
         data: { "scene": "addoption", "option": that.data.option, "userid": app.globalData.userid, "voteid": that.data.votemain.id},
         success: function (rep){ 
           //处理optioninfo process组件
@@ -276,7 +276,7 @@ Page({
       console.log(id);
        //获取投票信息
        wx.request({
-         url: app.globalData.host +"/wx_graduation_voteforyou/",
+         url: app.globalData.host +"/wx_vote/",
          data:{"scene":"get_vote_detail","id":id},
          success:function(rep){
            console.log(rep.data);

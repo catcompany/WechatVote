@@ -103,7 +103,7 @@ if(!empty($upload)){
         //把文件转存到你希望的目录（不要使用copy函数）  
         $uploaded_file=$_FILES['file']['tmp_name'];  
         //我们给每个用户动态的创建一个文件夹  
-        $user_path=$_SERVER['DOCUMENT_ROOT']."/wx_graduation_voteforyou/uploadfile/img/".$userid;  
+        $user_path=$_SERVER['DOCUMENT_ROOT']."/wx_vote/uploadfile/img/".$userid;  
         //判断该用户文件夹是否已经有这个文件夹      		
         if(!file_exists($user_path)){	
             mkdir($user_path,0777,true);//必须加上true,多级目录，和java不同	

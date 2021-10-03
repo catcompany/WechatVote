@@ -3,7 +3,7 @@ App({
   globalData:{
     userinfo:null,
     userid:null,
-    host:"https://api.zyrs.xyz:10000",
+    host:"https://vote.catcompany.cn",
   },
   //用户登录
   userLogin: function (userinfo) {
@@ -21,7 +21,7 @@ App({
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: that.globalData.host + "/wx_graduation_voteforyou/",
+            url: that.globalData.host + "/wx_vote/",
             data: {
               "scene": "vote_login",
               'code': res.code,

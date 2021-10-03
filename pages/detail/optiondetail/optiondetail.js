@@ -21,7 +21,7 @@ Page({
      })
      //获取选项信息，投票者
      wx.request({
-       url: app.globalData.host +"/wx_graduation_voteforyou/",
+       url: app.globalData.host +"/wx_vote/",
        data:{"scene":"get_optiondetail","id":vid},
        success:function(e){
          //console.log(e.data);

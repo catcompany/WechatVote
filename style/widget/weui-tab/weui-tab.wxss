@@ -8,19 +8,22 @@
   width: 100%;
   border-bottom: 1rpx solid #CCCCCC;
 }
+
 .weui-navbar__item {
   position: relative;
   display: block;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 13px 0;
   text-align: center;
   font-size: 0;
 }
+
 .weui-navbar__item.weui-bar__item_on {
   color: #1AAD19;
 }
+
 .weui-navbar__slider {
   position: absolute;
   content: " ";
@@ -34,6 +37,7 @@
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
+
 .weui-navbar__title {
   display: inline-block;
   font-size: 15px;
@@ -44,10 +48,12 @@
   white-space: nowrap;
   word-wrap: normal;
 }
+
 .weui-tab {
   position: relative;
   height: 100%;
 }
+
 .weui-tab__panel {
   box-sizing: border-box;
   height: 100%;

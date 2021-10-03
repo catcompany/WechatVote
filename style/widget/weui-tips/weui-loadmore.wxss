@@ -5,14 +5,17 @@
   font-size: 14px;
   text-align: center;
 }
+
 .weui-loadmore__tips {
   display: inline-block;
   vertical-align: middle;
 }
+
 .weui-loadmore_line {
   border-top: 1px solid #E5E5E5;
   margin-top: 2.4em;
 }
+
 .weui-loadmore__tips_in-line {
   position: relative;
   top: -0.9em;
@@ -20,12 +23,14 @@
   background-color: #FFFFFF;
   color: #999999;
 }
+
 .weui-loadmore__tips_in-dot {
   position: relative;
   padding: 0 .16em;
   width: 4px;
   height: 1.6em;
 }
+
 .weui-loadmore__tips_in-dot:before {
   content: " ";
   position: absolute;

@@ -10,6 +10,7 @@
   font-size: 12px;
   vertical-align: middle;
 }
+
 .weui-badge_dot {
   padding: .4em;
   min-width: 0;
